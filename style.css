@@ -19,6 +19,7 @@ body {
   font-family: var(--font-primary);
   font-size: var(--font-size);
   line-height: var(--line-height);
+  overflow: hidden;
 }
 h1 {
   margin-bottom: calc(var(--space) * 3);
@@ -44,6 +45,20 @@ h1 {
   position: absolute;
   inset: 0;
   z-index: -100;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+::selection {
+  color: white;
+  background: black;
 }
 .main-navigation-toggle {
   position: fixed;
